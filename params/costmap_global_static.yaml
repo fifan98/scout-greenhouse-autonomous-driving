@@ -1,0 +1,13 @@
+global_frame: map
+rolling_window: false
+track_unknown_space: true
+lethal_cost_threshold: 50
+
+resolution: 0.025
+
+inflation:
+    inflation_radius: 0.05
+
+plugins:
+  - {name: static,                  type: "costmap_2d::StaticLayer"}
+  - {name: inflation,               type: "costmap_2d::InflationLayer"}
