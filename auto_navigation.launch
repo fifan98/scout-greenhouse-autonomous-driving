@@ -1,0 +1,14 @@
+<launch>
+  <!-- Launch master.py -->
+  <node name="master_node" pkg="scout_ros_nav" type="master.py" output="screen">
+  </node>
+
+  <!-- Launch PID.py -->
+  <node name="pid_node" pkg="scout_ros_nav" type="PID.py" output="screen">
+  </node>
+
+  <!-- Launch mjeh.py -->
+  <node name="mjeh_node" pkg="scout_ros_nav" type="mjeh.py" output="screen">
+  </node>
+</launch>
+
